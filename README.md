@@ -45,6 +45,7 @@ python -m evanet.run_evanet --checkpoints=rgb1.ckpt,rgb2.ckpt,flow1.ckpt,flow2.c
 These results are on the video available November 2018, about 10% less than the original dataset.
 
 | Method | Accuracy |
+| ------------- | ------------- |
 | I3D | 72.6 |
 | (2+1)D I3D | 74.3 |
 | iTGM I3D | 74.4 |
@@ -64,6 +65,7 @@ These results are on the video available November 2018, about 10% less than the 
 ## HMDB (3 splits)
 
 | Method | Accuacy |
+| ------------- | ------------- |
 | Two-stream | 59.4 |
 | Two-stream+IDT | 69.2 |
 | R(2+1)D | 78.7 |
@@ -96,6 +98,7 @@ These results are on the video available November 2018, about 10% less than the 
 ## Moments-in-Time
 
 | Method | Accuracy |
+| ------------- | ------------- |
 | I3D | 29.5 |
 | ResNet-50 | 30.5 |
 | ResNet-50 + NL | 30.7 |
