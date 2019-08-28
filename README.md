@@ -1,6 +1,6 @@
 # Evolving Space-Time Neural Architectures for Videos
 
-This repository (forked from [google_research](https://github.com/google-research/google-research) contains the code and pretrained models for EvaNet:
+This repository (forked from [google_research](https://github.com/google-research/google-research)) contains the code and pretrained models for EvaNet:
 
     "Evolving Space-Time Neural Architectures for Videos"
     AJ Piergiovanni, Anelia Angelova, Alexander Toshev, and Michael S. Ryoo
@@ -22,7 +22,7 @@ corresponding to a cricket activity. Running the full evaluation on the Kinetics
 validation set available in November 2018 (roughly 19200 videos) gives 77.2% accuracy.
 
 ## iTGM Layer
-The iTGM layer, a 3D version of the (TGM layer)[https://github.com/piergiaj/tgm-icml19] from our ICML 2019 paper [Temporal Gaussian Mixture Layer for Videos](https://arxiv.org/abs/1803.06316) is in the tgm_layer.py file. This layer inflates a 2D spatial kernel based on a mixture of 1D (temporal) Gaussians. This allows the modeling of spatio-temporal filters with significantly fewer parameters.
+The iTGM layer, a 3D version of the [TGM layer](https://github.com/piergiaj/tgm-icml19) from our ICML 2019 paper [Temporal Gaussian Mixture Layer for Videos](https://arxiv.org/abs/1803.06316) is in the tgm_layer.py file. This layer inflates a 2D spatial kernel based on a mixture of 1D (temporal) Gaussians. This allows the modeling of spatio-temporal filters with significantly fewer parameters.
 
 ## Installation and Running
 
@@ -43,6 +43,7 @@ python -m evanet.run_evanet --checkpoints=rgb1.ckpt,rgb2.ckpt,flow1.ckpt,flow2.c
 
 ## Kinetics-400
 These results are on the video available November 2018, about 10% less than the original dataset.
+
 | Method | Accuracy |
 | I3D | 72.6 |
 | (2+1)D I3D | 74.3 |
@@ -61,6 +62,7 @@ These results are on the video available November 2018, about 10% less than the 
 | Top 3 (Individual, ours) | 75.7 |
 
 ## HMDB (3 splits)
+
 | Method | Accuacy |
 | Two-stream | 59.4 |
 | Two-stream+IDT | 69.2 |
@@ -92,6 +94,7 @@ These results are on the video available November 2018, about 10% less than the 
 
 
 ## Moments-in-Time
+
 | Method | Accuracy |
 | I3D | 29.5 |
 | ResNet-50 | 30.5 |
